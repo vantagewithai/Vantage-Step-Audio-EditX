@@ -61,6 +61,199 @@ Example usage in a ComfyUI flow:
 - Feed this script to the node.  
 - Get a single AUDIO output: concatenated waveform with cloned voices, pauses, and editing.  
 
+- **Emotion and Speaking Style Editing**
+  - Remarkably effective iterative control over emotions and styles, supporting **dozens** of options for editing.
+    - Emotion Editing : [ *Angry*, *Happy*, *Sad*, *Excited*, *Fearful*, *Surprised*, *Disgusted*, etc. ]
+    - Speaking Style Editing: [ *Act_coy*, *Older*, *Child*, *Whisper*, *Serious*, *Generous*, *Exaggerated*, etc.]
+    - Editing with more emotion and more speaking styles is on the way. **Get Ready!** 🚀
+    
+
+- **Paralinguistic Editing**
+  -  Precise control over 10 types of paralinguistic features for more natural, human-like, and expressive synthetic audio.
+  - Supporting Tags:
+    - [ *Breathing*, *Laughter*, *Suprise-oh*, *Confirmation-en*, *Uhm*, *Suprise-ah*, *Suprise-wa*, *Sigh*, *Question-ei*, *Dissatisfaction-hnn* ]
+
+- **Available Tags**
+<table>
+  <tr>
+    <td rowspan="8" style="vertical-align: middle; text-align:center;" align="center">emotion</td>
+    <td align="center"><b>happy</b></td>
+    <td align="center">Expressing happiness</td>
+    <td align="center"><b>angry</b></td>
+    <td align="center">Expressing anger</td>
+  </tr>
+  <tr>
+    <td align="center"><b>sad</b></td>
+    <td align="center">Expressing sadness</td>
+    <td align="center"><b>fear</b></td>
+    <td align="center">Expressing fear</td>
+  </tr>
+  <tr>
+    <td align="center"><b>surprised</b></td>
+    <td align="center">Expressing surprise</td>
+    <td align="center"><b>confusion</b></td>
+    <td align="center">Expressing confusion</td>
+  </tr>
+  <tr>
+    <td align="center"><b>empathy</b></td>
+    <td align="center">Expressing empathy and understanding</td>
+    <td align="center"><b>embarrass</b></td>
+    <td align="center">Expressing embarrassment</td>
+  </tr>
+  <tr>
+    <td align="center"><b>excited</b></td>
+    <td align="center">Expressing excitement and enthusiasm</td>
+    <td align="center"><b>depressed</b></td>
+    <td align="center">Expressing a depressed or discouraged mood</td>
+  </tr>
+  <tr>
+    <td align="center"><b>admiration</b></td>
+    <td align="center">Expressing admiration or respect</td>
+    <td align="center"><b>coldness</b></td>
+    <td align="center">Expressing coldness and indifference</td>
+  </tr>
+  <tr>
+    <td align="center"><b>disgusted</b></td>
+    <td align="center">Expressing disgust or aversion</td>
+    <td align="center"><b>humour</b></td>
+    <td align="center">Expressing humor or playfulness</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan="17" style="vertical-align: middle; text-align:center;" align="center">speaking style</td>
+    <td align="center"><b>serious</b></td>
+    <td align="center">Speaking in a serious or solemn manner</td>
+    <td align="center"><b>arrogant</b></td>
+    <td align="center">Speaking in an arrogant manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>child</b></td>
+    <td align="center">Speaking in a childlike manner</td>
+    <td align="center"><b>older</b></td>
+    <td align="center">Speaking in an elderly-sounding manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>girl</b></td>
+    <td align="center">Speaking in a light, youthful feminine manner</td>
+    <td align="center"><b>pure</b></td>
+    <td align="center">Speaking in a pure, innocent manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>sister</b></td>
+    <td align="center">Speaking in a mature, confident feminine manner</td>
+    <td align="center"><b>sweet</b></td>
+    <td align="center">Speaking in a sweet, lovely manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>exaggerated</b></td>
+    <td align="center">Speaking in an exaggerated, dramatic manner</td>
+    <td align="center"><b>ethereal</b></td>
+    <td align="center">Speaking in a soft, airy, dreamy manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>whisper</b></td>
+    <td align="center">Speaking in a whispering, very soft manner</td>
+    <td align="center"><b>generous</b></td>
+    <td align="center">Speaking in a hearty, outgoing, and straight-talking manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>recite</b></td>
+    <td align="center">Speaking in a clear, well-paced, poetry-reading manner</td>
+    <td align="center"><b>act_coy</b></td>
+    <td align="center">Speaking in a sweet, playful, and endearing manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>warm</b></td>
+    <td align="center">Speaking in a warm, friendly manner</td>
+    <td align="center"><b>shy</b></td>
+    <td align="center">Speaking in a shy, timid manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>comfort</b></td>
+    <td align="center">Speaking in a comforting, reassuring manner</td>
+    <td align="center"><b>authority</b></td>
+    <td align="center">Speaking in an authoritative, commanding manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>chat</b></td>
+    <td align="center">Speaking in a casual, conversational manner</td>
+    <td align="center"><b>radio</b></td>
+    <td align="center">Speaking in a radio-broadcast manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>soulful</b></td>
+    <td align="center">Speaking in a heartfelt, deeply emotional manner</td>
+    <td align="center"><b>gentle</b></td>
+    <td align="center">Speaking in a gentle, soft manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>story</b></td>
+    <td align="center">Speaking in a narrative, audiobook-style manner</td>
+    <td align="center"><b>vivid</b></td>
+    <td align="center">Speaking in a lively, expressive manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>program</b></td>
+    <td align="center">Speaking in a show-host/presenter manner</td>
+    <td align="center"><b>news</b></td>
+    <td align="center">Speaking in a news broadcasting manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>advertising</b></td>
+    <td align="center">Speaking in a polished, high-end commercial voiceover manner</td>
+    <td align="center"><b>roar</b></td>
+    <td align="center">Speaking in a loud, deep, roaring manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>murmur</b></td>
+    <td align="center">Speaking in a quiet, low manner</td>
+    <td align="center"><b>shout</b></td>
+    <td align="center">Speaking in a loud, sharp, shouting manner</td>
+  </tr>
+  <tr>
+    <td align="center"><b>deeply</b></td>
+    <td align="center">Speaking in a deep and low-pitched tone</td>
+    <td align="center"><b>loudly</b></td>
+    <td align="center">Speaking in a loud and high-pitched tone</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan="5" style="vertical-align: middle; text-align:center;" align="center">paralinguistic</td>
+    <td align="center"><b>Breathing</b></td>
+    <td align="center">Breathing sound</td>
+    <td align="center"><b>Laughter</b></td>
+    <td align="center">Laughter or laughing sound</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Uhm</b></td>
+    <td align="center">Hesitation sound: "Uhm"</td>
+    <td align="center"><b>Sigh</b></td>
+    <td align="center">Sighing sound</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Surprise-oh</b></td>
+    <td align="center">Expressing surprise: "Oh"</td>
+    <td align="center"><b>Surprise-ah</b></td>
+    <td align="center">Expressing surprise: "Ah"</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Surprise-wa</b></td>
+    <td align="center">Expressing surprise: "Wa"</td>
+    <td align="center"><b>Confirmation-en</b></td>
+    <td align="center">Confirming: "En"</td>
+  </tr>
+  <tr>
+    <td align="center"><b>Question-ei</b></td>
+    <td align="center">Questioning: "Ei"</td>
+    <td align="center"><b>Dissatisfaction-hnn</b></td>
+    <td align="center">Dissatisfied sound: "Hnn"</td>
+  </tr>
+</table>
+
 ---
 
 ## Installation / Integration
