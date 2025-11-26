@@ -1,0 +1,711 @@
+{
+  "id": "43464027-f4e2-42f3-aca1-c5642a28819a",
+  "revision": 0,
+  "last_node_id": 23,
+  "last_link_id": 25,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "LoadAudio",
+      "pos": [
+        -686.2345875815749,
+        -1534.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "title": "Speaker 3",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "3.wav",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 16,
+      "type": "LoadAudio",
+      "pos": [
+        -1274.234587581575,
+        -1348.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "title": "Speaker 4",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "4.mp3",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 17,
+      "type": "LoadAudio",
+      "pos": [
+        -980.2345875815749,
+        -1348.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "title": "Speaker 5",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "5.mp3",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 21,
+      "type": "SaveAudioMP3",
+      "pos": [
+        126.76541241842506,
+        -1277.1351369489882
+      ],
+      "size": [
+        331,
+        136
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 25
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "SaveAudioMP3"
+      },
+      "widgets_values": [
+        "editx/z",
+        "320k"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "EditXMultiVoiceCloner",
+      "pos": [
+        131.76541241842506,
+        -1535.1351369489882
+      ],
+      "size": [
+        312,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "models",
+          "type": "EDITX_MODELS",
+          "link": 11
+        },
+        {
+          "name": "speakers",
+          "type": "EDITX_SPEAKERS",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EditXMultiVoiceCloner"
+      },
+      "widgets_values": [
+        "",
+        2,
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 5,
+      "type": "LoadAudio",
+      "pos": [
+        -980.2345875815749,
+        -1534.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "Speaker 2",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "2.mp3",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 4,
+      "type": "LoadAudio",
+      "pos": [
+        -1274.234587581575,
+        -1534.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "title": "Speaker 1",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "1 (1).mp3",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "StringConstantMultiline",
+      "pos": [
+        -375.23458758157494,
+        -1309.1351369489882
+      ],
+      "size": [
+        474,
+        598
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "title": "Audio Script",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.8",
+        "Node name for S&R": "StringConstantMultiline"
+      },
+      "widgets_values": [
+        "[speaker1] [breathing]So, did anyone else get completely lost trying to find this café? My GPS spun me around the block three times before admitting defeat.\n[pause]500\n[speaker2] Same here. I swear the map wanted me to meet my existential crisis instead of my friends. I only found the place because of that neon sign outside.\n[pause]300\n[speaker3] It’s not that hard, people. I just followed the smell of fresh pastries—worked like a charm. Priorities matter.\n[pause]500\n[speaker4] Oh, pastry radar, huh? My radar only detects coffee. And speaking of which, how do they make it so strong? It’s like drinking rocket fuel—delicious, dangerous rocket fuel.\n[speaker5][happy] I love strong coffee; it’s the only thing keeping my brain from buffering today. Though, after a cup of it, I can probably type an essay while running a marathon.\n[speaker6][humour] Speaking of running, I tried jogging this morning. My body said “new personal record,” my legs said “new personal regret.” [laughter] Guess I set the bar high... and jumped under it.\n[pause]500\n[speaker1][happy] That’s Vinny logic again—turning fitness into a philosophical tragedy. We should print that on a t-shirt.\n[speaker6] Nah, make it motivational: “Run like you stole your own wallet.” That way, it’s both fitness advice and life strategy.\n[pause]500\n[speaker2][surprised] You’re impossible, Vinny. But I’ll give you credit—that’s probably the only slogan that would actually make me run.\n[speaker3] Next time, we’ll race to this café then. Last one here buys the coffee. Deal?\n[pause]500\n[speaker5] As long as Vinny’s the one timing—it’ll take him three puns and a stretch before he hits start.\n[pause]300\n[speaker4] Perfect. By then, I’ll already be halfway here, fueled by caffeine and chaos.",
+        true
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 18,
+      "type": "LoadAudio",
+      "pos": [
+        -686.2345875815749,
+        -1348.1351369489882
+      ],
+      "size": [
+        274,
+        136
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "title": "Speaker 6",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "6.mp3",
+        null,
+        null
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 10,
+      "type": "EditXModelLoader",
+      "pos": [
+        -375.23458758157494,
+        -1534.1351369489882
+      ],
+      "size": [
+        471,
+        130
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "models",
+          "type": "EDITX_MODELS",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EditXModelLoader"
+      },
+      "widgets_values": [
+        "none",
+        "bfloat16",
+        true,
+        true
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 23,
+      "type": "Label (rgthree)",
+      "pos": [
+        -1036.234587581575,
+        -1716.6601613630505
+      ],
+      "size": [
+        1060.8499755859375,
+        48
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Tutorial https://www.youtube.com/@vantagewithai",
+      "properties": {
+        "fontSize": 48,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 22,
+      "type": "Label (rgthree)",
+      "pos": [
+        -702.1047047690748,
+        -1790.1351369489882
+      ],
+      "size": [
+        332.6666564941406,
+        48
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Vantage with AI",
+      "properties": {
+        "fontSize": 48,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 7,
+      "type": "LoadSpeakers",
+      "pos": [
+        -1270.234587581575,
+        -1167.1351369489882
+      ],
+      "size": [
+        852.2999938964844,
+        458
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio_1",
+          "type": "AUDIO",
+          "link": 6
+        },
+        {
+          "name": "audio_2",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 7
+        },
+        {
+          "name": "audio_3",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 8
+        },
+        {
+          "name": "audio_4",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 23
+        },
+        {
+          "name": "audio_5",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 22
+        },
+        {
+          "name": "audio_6",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "speakers",
+          "type": "EDITX_SPEAKERS",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadSpeakers"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 19,
+      "type": "MarkdownNote",
+      "pos": [
+        -1918.234587581575,
+        -1575.135136948988
+      ],
+      "size": [
+        581.4115684682458,
+        378.672223544448
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Download Links",
+      "properties": {},
+      "widgets_values": [
+        "## Download link\n\n- [Download](https://huggingface.co/vantagewithai/Step-Fun-EditX-ComfyUI)\n\nAfter downloading the models, copy them into ComfyUI/models, you should have the following structure:\n```\nComfyUI/\n├── models/\n│   ├── Step-Audio-EditX/\n│   ├──── CosyVoice-300M-25Hz/\n│   │     ├─── campplus.onnx\n│   │     ├─── cosyvoice.yaml\n│   │     ├─── flow.pt\n│   │     └─── hift.pt\n│   ├──── dengcunqin/\n│   ├──── └─── speech_paraformer-large_asr_nat-zh-cantonese-en-16k-vocab8501-online/\n│   │          ├─── am.mvn\n│   │          ├─── config.yaml\n│   │          ├─── configuration.json\n│   │          ├─── model.pt\n│   │          ├─── seg_dict\n│   │          ├─── tokens.json\n│   │          ├─── tokens.txt\n│   │          └─── write_tokens_from_txt.py\n│   ├── model.safetensors\n│   └── speech_tokenizer_v1.onnx\n```"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 20,
+      "type": "MarkdownNote",
+      "pos": [
+        -1914.234587581575,
+        -1145.1351369489882
+      ],
+      "size": [
+        574.4115684682458,
+        395.672223544448
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Prompt format",
+      "properties": {},
+      "widgets_values": [
+        "## Prompt Format\n\n**[speakerid][emotion][style][speed]Sample [paralinguistics] Text**\n\n**Samples**\n\n- [speaker1][happy]How are you!\n- [speaker2][happy][child]I am fine.\n- [speaker1][slower]That is good. [laughter] enjoy your games.\n\n**Emotions**\n\n- [happy] [angry] [sad] [humour] [confusion] [disgusted] [empathy] [embarrass] [fear] [surprised] [excited] [depressed] [coldness] [admiration] [remove]\n\n**Styles**\n\n- [serious] [arrogant] [child] [older] [girl] [pure] [sister] [sweet] [ethereal] [whisper] [gentle] [recite] [generous] [act_coy] [warm] [shy] [comfort] [authority] [chat] [radio] [soulful] [story] [vivid] [program] [news] [advertising] [roar] [murmur] [shout] [deeply] [loudly] [remove] [exaggerated]\n\n**Speed**\n\n- [faster] [slower] [more faster] [more slower]\n\n**Paralinguistics**\n\n- [breathing] [laughter] [suprise-oh] [confirmation-en] [uhm] [suprise-ah] [suprise-wa] [sigh] [question-ei] [dissatisfaction-hnn]"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      6,
+      4,
+      0,
+      7,
+      0,
+      "AUDIO"
+    ],
+    [
+      7,
+      5,
+      0,
+      7,
+      1,
+      "AUDIO"
+    ],
+    [
+      8,
+      6,
+      0,
+      7,
+      2,
+      "AUDIO"
+    ],
+    [
+      11,
+      10,
+      0,
+      9,
+      0,
+      "EDITX_MODELS"
+    ],
+    [
+      13,
+      7,
+      0,
+      9,
+      1,
+      "EDITX_SPEAKERS"
+    ],
+    [
+      22,
+      17,
+      0,
+      7,
+      4,
+      "AUDIO"
+    ],
+    [
+      23,
+      16,
+      0,
+      7,
+      3,
+      "AUDIO"
+    ],
+    [
+      24,
+      18,
+      0,
+      7,
+      5,
+      "AUDIO"
+    ],
+    [
+      25,
+      9,
+      0,
+      21,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Model",
+      "bounding": [
+        -386.23458758157494,
+        -1608.1351369489882,
+        494,
+        215
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Speakers",
+      "bounding": [
+        -1284.234587581575,
+        -1607.7351369489882,
+        882,
+        908.6
+      ],
+      "color": "#88A",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Script",
+      "bounding": [
+        -385.23458758157494,
+        -1382.7351369489882,
+        494,
+        681.6
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Processing",
+      "bounding": [
+        121.76541241842506,
+        -1608.7351369489882,
+        332,
+        283.6
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        1354.234587581575,
+        1704.1351369489882
+      ]
+    },
+    "frontendVersion": "1.30.6"
+  },
+  "version": 0.4
+}
