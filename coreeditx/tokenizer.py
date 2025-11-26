@@ -58,7 +58,7 @@ class StepAudioTokenizer:
         logger.debug("Loading audio tokenizer")
         funasr_model_id="dengcunqin/speech_paraformer-large_asr_nat-zh-cantonese-en-16k-vocab8501-online"
         config_path = CONFIG_DIR
-        funasr_model_path = os.path.join(config_path, funasr_model_id)
+        funasr_model_path = os.path.join(self.model_path, funasr_model_id)
         
         try:
             self.funasr_model = AutoModel(
