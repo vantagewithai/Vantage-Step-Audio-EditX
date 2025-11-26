@@ -1,0 +1,17 @@
+[project]
+name = "Vantage-Step-Audio-EditX"
+description = "It adapts and extends EditX capabilities to support multi‑speaker, long‑format, voice cloning, and emotion/style/speed editing, enabling you to feed in a script with multiple speakers, inline pauses, paralinguistic cues, and get a concatenated audio output in one pass. Low VRAM"
+version = "0.1.0"
+license = {file = "LICENSE"}
+
+classifiers = ["Environment :: GPU :: NVIDIA CUDA"]
+
+[project.urls]
+Repository = "https://github.com/vantagewithai/Vantage-Step-Audio-EditX"
+"Bug Tracker" = "https://github.com/vantagewithai/Vantage-Step-Audio-EditX/issues"
+
+[tool.comfy]
+PublisherId = "vantagewithai"
+DisplayName = "Vantage-Step-Audio-EditX"
+Icon = ""
+
