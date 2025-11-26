@@ -2,7 +2,7 @@
   "id": "43464027-f4e2-42f3-aca1-c5642a28819a",
   "revision": 0,
   "last_node_id": 23,
-  "last_link_id": 25,
+  "last_link_id": 26,
   "nodes": [
     {
       "id": 6,
@@ -174,6 +174,14 @@
           "name": "speakers",
           "type": "EDITX_SPEAKERS",
           "link": 13
+        },
+        {
+          "name": "prompt_text",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt_text"
+          },
+          "link": 26
         }
       ],
       "outputs": [
@@ -273,43 +281,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 8,
-      "type": "StringConstantMultiline",
-      "pos": [
-        -375.23458758157494,
-        -1309.1351369489882
-      ],
-      "size": [
-        474,
-        598
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            12
-          ]
-        }
-      ],
-      "title": "Audio Script",
-      "properties": {
-        "cnr_id": "comfyui-kjnodes",
-        "ver": "1.1.8",
-        "Node name for S&R": "StringConstantMultiline"
-      },
-      "widgets_values": [
-        "[speaker1] [breathing]So, did anyone else get completely lost trying to find this café? My GPS spun me around the block three times before admitting defeat.\n[pause]500\n[speaker2] Same here. I swear the map wanted me to meet my existential crisis instead of my friends. I only found the place because of that neon sign outside.\n[pause]300\n[speaker3] It’s not that hard, people. I just followed the smell of fresh pastries—worked like a charm. Priorities matter.\n[pause]500\n[speaker4] Oh, pastry radar, huh? My radar only detects coffee. And speaking of which, how do they make it so strong? It’s like drinking rocket fuel—delicious, dangerous rocket fuel.\n[speaker5][happy] I love strong coffee; it’s the only thing keeping my brain from buffering today. Though, after a cup of it, I can probably type an essay while running a marathon.\n[speaker6][humour] Speaking of running, I tried jogging this morning. My body said “new personal record,” my legs said “new personal regret.” [laughter] Guess I set the bar high... and jumped under it.\n[pause]500\n[speaker1][happy] That’s Vinny logic again—turning fitness into a philosophical tragedy. We should print that on a t-shirt.\n[speaker6] Nah, make it motivational: “Run like you stole your own wallet.” That way, it’s both fitness advice and life strategy.\n[pause]500\n[speaker2][surprised] You’re impossible, Vinny. But I’ll give you credit—that’s probably the only slogan that would actually make me run.\n[speaker3] Next time, we’ll race to this café then. Last one here buys the coffee. Deal?\n[pause]500\n[speaker5] As long as Vinny’s the one timing—it’ll take him three puns and a stretch before he hits start.\n[pause]300\n[speaker4] Perfect. By then, I’ll already be halfway here, fueled by caffeine and chaos.",
-        true
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 18,
       "type": "LoadAudio",
       "pos": [
@@ -321,7 +292,7 @@
         136
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -359,7 +330,7 @@
         130
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -397,7 +368,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -428,7 +399,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -531,7 +502,7 @@
         378.672223544448
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -555,7 +526,7 @@
         395.672223544448
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -566,6 +537,44 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 8,
+      "type": "StringConstantMultiline",
+      "pos": [
+        -375.23458758157494,
+        -1309.1351369489882
+      ],
+      "size": [
+        474,
+        598
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            12,
+            26
+          ]
+        }
+      ],
+      "title": "Audio Script",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.8",
+        "Node name for S&R": "StringConstantMultiline"
+      },
+      "widgets_values": [
+        "[speaker1] [breathing]So, did anyone else get completely lost trying to find this café? My GPS spun me around the block three times before admitting defeat.\n[pause]500\n[speaker2] Same here. I swear the map wanted me to meet my existential crisis instead of my friends. I only found the place because of that neon sign outside.\n[pause]300\n[speaker3] It’s not that hard, people. I just followed the smell of fresh pastries—worked like a charm. Priorities matter.\n[pause]500\n[speaker4] Oh, pastry radar, huh? My radar only detects coffee. And speaking of which, how do they make it so strong? It’s like drinking rocket fuel—delicious, dangerous rocket fuel.\n[speaker5][happy] I love strong coffee; it’s the only thing keeping my brain from buffering today. Though, after a cup of it, I can probably type an essay while running a marathon.\n[speaker6][humour] Speaking of running, I tried jogging this morning. My body said “new personal record,” my legs said “new personal regret.” [laughter] Guess I set the bar high... and jumped under it.\n[pause]500\n[speaker1][happy] That’s Vinny logic again—turning fitness into a philosophical tragedy. We should print that on a t-shirt.\n[speaker6] Nah, make it motivational: “Run like you stole your own wallet.” That way, it’s both fitness advice and life strategy.\n[pause]500\n[speaker2][surprised] You’re impossible, Vinny. But I’ll give you credit—that’s probably the only slogan that would actually make me run.\n[speaker3] Next time, we’ll race to this café then. Last one here buys the coffee. Deal?\n[pause]500\n[speaker5] As long as Vinny’s the one timing—it’ll take him three puns and a stretch before he hits start.\n[pause]300\n[speaker4] Perfect. By then, I’ll already be halfway here, fueled by caffeine and chaos.",
+        true
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -640,6 +649,14 @@
       21,
       0,
       "AUDIO"
+    ],
+    [
+      26,
+      8,
+      0,
+      9,
+      2,
+      "STRING"
     ]
   ],
   "groups": [
@@ -701,8 +718,8 @@
     "ds": {
       "scale": 1,
       "offset": [
-        1354.234587581575,
-        1704.1351369489882
+        1355.234587581575,
+        1716.1351369489882
       ]
     },
     "frontendVersion": "1.30.6"
