@@ -74,7 +74,8 @@ Example usage in a ComfyUI flow:
 
 ## Download Models
 [Download](https://huggingface.co/vantagewithai/Step-Fun-EditX-ComfyUI)
-Download all the files and copy to Step-Audio-EditX folder.
+
+After downloading the models, copy them into ComfyUI/models, you should have the following structure:
 ```
 ComfyUI/
 ├── models/
@@ -84,6 +85,16 @@ ComfyUI/
 │   │     ├─── cosyvoice.yaml
 │   │     ├─── flow.pt
 │   │     └─── hift.pt
+│   ├──── dengcunqin/
+│   ├──── └─── speech_paraformer-large_asr_nat-zh-cantonese-en-16k-vocab8501-online/
+│   │          ├─── am.mvn
+│   │          ├─── config.yaml
+│   │          ├─── configuration.json
+│   │          ├─── model.pt
+│   │          ├─── seg_dict
+│   │          ├─── tokens.json
+│   │          ├─── tokens.txt
+│   │          └─── write_tokens_from_txt.py
 │   ├── model.safetensors
 │   └── speech_tokenizer_v1.onnx
 ```
