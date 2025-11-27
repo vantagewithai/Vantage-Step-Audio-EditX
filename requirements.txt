@@ -3,7 +3,7 @@ torchaudio
 torchvision
 transformers==4.53.3
 accelerate
-openai-whisper==20240930
+openai-whisper
 onnxruntime-gpu
 onnxruntime
 omegaconf
