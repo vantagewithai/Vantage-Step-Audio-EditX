@@ -165,13 +165,20 @@ class StepAudioTokenizer:
         return self.device
         
     def get_vq02_code(self, audio, session_id=None, is_final=True):
-        #_tmp_wav = io.BytesIO()
-        #torchaudio.save(_tmp_wav, audio, 16000, format="wav")
-        #_tmp_wav.seek(0)
-        with tempfile.NamedTemporaryFile(suffix=".wav") as tmpfile:
-            sf.write(tmpfile.name, audio.cpu().numpy().T, 16000)
-            with open(tmpfile.name, "rb") as f:
-                _tmp_wav = io.BytesIO(f.read())
+        generated = True
+        try:
+            logger.debug("Using BytesIO")
+            _tmp_wav = io.BytesIO()
+            torchaudio.save(_tmp_wav, audio, 16000, format="wav")
+        except Exception as e:
+            generated = False
+        if(not generated):
+            logger.debug("Using Temp File")
+            with tempfile.NamedTemporaryFile(suffix=".wav") as tmpfile:
+                sf.write(tmpfile.name, audio.cpu().numpy().T, 16000)
+                with open(tmpfile.name, "rb") as f:
+                    _tmp_wav = io.BytesIO(f.read())
+        
         _tmp_wav.seek(0)
     
         with self.vq02_lock:
